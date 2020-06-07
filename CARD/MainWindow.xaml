@@ -1,0 +1,56 @@
+﻿<Window x:Class="CARD.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CARD"
+        mc:Ignorable="d"
+        Title="MySpider" Height="700" Width="1200" MaxHeight="700" MinWidth="1200" MaxWidth="1200">
+    <DockPanel>
+        <DockPanel.Background>
+            <ImageBrush ImageSource="./Pic/Background.jpg"/>
+        </DockPanel.Background>
+        <Menu Height="20" DockPanel.Dock="Top">
+            <MenuItem Header="游戏(_G)">
+                <MenuItem Header="新游戏(_N)" Click="OnNewGame" ></MenuItem>
+                <MenuItem Header="重玩(_R)" Click="OnGameAgain"></MenuItem>
+                <MenuItem Header="保存游戏(_S)" Click="OnSave"></MenuItem>
+                <MenuItem Header="打开游戏(_S)" Click="OnOpen"></MenuItem>
+                <Separator></Separator>
+                <MenuItem Header="发牌(_D)" Click="OnDeal"></MenuItem>
+                <Separator></Separator>
+                <MenuItem Header="退出(_E)" Click="OnExit"></MenuItem>
+            </MenuItem>
+            <MenuItem Header="发牌(_D)" Click="OnDeal"></MenuItem>
+            <MenuItem Header="关于(_A)" >
+            </MenuItem>
+        </Menu>
+        <Canvas Width="1200" DockPanel.Dock="Left" Name="gameBox">
+            <Grid 
+            Height="100"
+            Width="200"
+            Name="scoreBoard"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Bottom"
+            DockPanel.Dock="Bottom" Canvas.Left="490" Canvas.Bottom="20">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Label Grid.Row="1" Grid.Column="1" HorizontalContentAlignment="Right" Content="操作:" />
+                <Label Grid.Row="1" Grid.Column="2" HorizontalContentAlignment="Left" Content="0" Name="times"/>
+                <Label Grid.Row="2" Grid.Column="1" HorizontalContentAlignment="Right" Content="得分:"/>
+                <Label Grid.Row="2" Grid.Column="2" HorizontalContentAlignment="Left" Content="500" Name="scores"/>
+            </Grid>
+           
+        </Canvas>
+    </DockPanel>
+</Window>

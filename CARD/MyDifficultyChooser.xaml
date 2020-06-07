@@ -1,0 +1,15 @@
+﻿<Window x:Class="CARD.MyDifficultyChooser"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CARD"
+        mc:Ignorable="d"
+        Title="请您选择游戏难度" Height="320.667" Width="627.333">
+    <Grid Height="170">
+        <RadioButton Content="普通" HorizontalAlignment="Left"  VerticalAlignment="Top" Checked="RadioButton1_Checked" GroupName="g1" Margin="261,55,0,0"/>
+        <RadioButton Content="困难" HorizontalAlignment="Left" VerticalAlignment="Top" Checked="RadioButton2_Checked" GroupName="g1" Margin="316,55,0,0"/>
+        <Button Content="确定" Click="ButtonOKClick" HorizontalAlignment="Center" VerticalAlignment="Bottom" Width="75" Margin="0,0,0,20"/>
+
+    </Grid>
+</Window>

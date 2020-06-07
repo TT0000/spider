@@ -1,0 +1,9 @@
+C:\Users\Administrator\source\repos\CARD\CARD\obj\Debug\CARD.csprojAssemblyReference.cache
+C:\Users\Administrator\source\repos\CARD\CARD\obj\Debug\MainWindow.g.cs
+C:\Users\Administrator\source\repos\CARD\CARD\obj\Debug\App.g.cs
+C:\Users\Administrator\source\repos\CARD\CARD\obj\Debug\CARD_MarkupCompile.cache
+C:\Users\Administrator\source\repos\CARD\CARD\obj\Debug\CARD_MarkupCompile.lref
+C:\Users\Administrator\source\repos\CARD\CARD\obj\Debug\Window1.g.cs
+C:\Users\Administrator\source\repos\CARD\CARD\obj\Debug\MyDifficultyChooser.g.cs
+C:\Users\Administrator\source\repos\CARD\CARD\obj\Debug\Window3.g.cs
+C:\Users\Administrator\source\repos\CARD\CARD\obj\Debug\Window4.g.cs
